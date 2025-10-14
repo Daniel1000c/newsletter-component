@@ -14,20 +14,57 @@
   box-sizing: border-box;
 }
 
+/*Root Formatting*/
+:root {
+  --main-font: "Poppins", sans-serif;
+  --heading-color: #000;
+  --field-input-bg: #f9fafb;
+  --btn-color: #284bce;
+}
+
 /*Body Formatting*/
 body {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
   height: 100vh;
-}
-
-/*Root Formatting*/
-:root {
-  --heading-color: #000;
-  --field-input-bg: #f9fafb;
-  --btn-color: #284bce;
+  font-family: var(--main-font);
 }
 /* ==========================================================================
    NEWSLETTER FORMATTING
    ========================================================================== */
+
+/*Format news letter font size*/
+article h1 {
+  font-weight: 600;
+  font-size: 3rem;
+}
+
+/*Format font weight for placeholder and submit button*/
+input::placeholder,
+input[target="submit"] {
+  font-size: 1rem;
+}
+
+/*Format subheading*/
+p {
+  font-weight: 400;
+  font-size: 1.25rem;
+}
+
+/*Format placeholder text for email input*/
+input::placeholder {
+  font-weight: 500;
+}
+
+/*Format button font size*/
+input[target="submit"] {
+  font-weight: 600;
+}
+
+/*Format helper text font styling*/
+.helperText {
+  font-weight: 400;
+  font-size: 0.875rem;
+}
