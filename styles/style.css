@@ -19,6 +19,7 @@
   --main-font: "Poppins", sans-serif;
   --heading-color: #000;
   --field-input-bg: #f9fafb;
+  --text-color: #fff;
   --btn-color: #284bce;
 }
 
@@ -29,42 +30,69 @@ body {
   align-items: center;
   text-align: center;
   height: 100vh;
-  font-family: var(--main-font);
 }
 /* ==========================================================================
    NEWSLETTER FORMATTING
    ========================================================================== */
 
-/*Format news letter font size*/
-article h1 {
+/*Format newsletter title*/
+.newsletter-title {
+  font-family: var(--main-font);
   font-weight: 600;
   font-size: 3rem;
 }
 
-/*Format font weight for placeholder and submit button*/
-input::placeholder,
-input[target="submit"] {
-  font-size: 1rem;
-}
-
-/*Format subheading*/
-p {
+/*Format subheading text*/
+.subheading-text {
+  font-family: var(--main-font);
   font-weight: 400;
   font-size: 1.25rem;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
-/*Format placeholder text for email input*/
-input::placeholder {
+/*Format input form*/
+.newsLetter-form {
+  background-color: var(--text-color);
+  width: 40%;
+  margin: 0 auto;
+  padding: 20px;
+  box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, 0.03),
+    0px 8px 12px 0px rgba(0, 0, 0, 0.08);
+  border-radius: 10px;
+}
+
+/*Format email input*/
+.emailInput {
+  background-color: var(--field-input-bg);
+  font-family: var(--main-font);
   font-weight: 500;
+  font-size: 1rem;
+  text-align: center;
+  width: 85%;
+  border-radius: 10px;
+  border: 0.5px solid #6c727f;
+  padding: 15px 5px;
+  margin-bottom: 20px;
 }
 
-/*Format button font size*/
-input[target="submit"] {
+/*Format submit button*/
+.submit {
+  background-color: var(--btn-color);
+  color: var(--text-color);
+  border-radius: 10px;
+  border: none;
+  font-family: var(--main-font);
   font-weight: 600;
+  font-size: 1rem;
+  width: 85%;
+  margin-bottom: 20px;
+  padding: 15px 5px;
 }
 
-/*Format helper text font styling*/
+/*Format helper text*/
 .helperText {
+  font-family: var(--main-font);
   font-weight: 400;
   font-size: 0.875rem;
 }
